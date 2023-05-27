@@ -1,0 +1,1 @@
+python main.py recognition -c config/ms_g3d/imigue/train_g3d.yaml

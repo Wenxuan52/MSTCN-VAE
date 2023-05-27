@@ -1,0 +1,21 @@
+weights: ./work_dir/recognition/iMiGUE/TCN_VAE/epoch80_model.pt
+work_dir: ./work_dir/recognition/iMiGUE/TCN_VAE_testdata
+# feeder
+feeder: feeder.feeder.Feeder
+test_feeder_args:
+  data_path: ./data/iMiGUE/imigue_polar/test_data.npy
+  label_path: ./data/iMiGUE/imigue_polar/test_label.pkl
+
+# model
+model: net.tcn_vae.TCN_VAE
+model_args:
+  en_input_size: 100
+  en_num_channels: [75, 20, 1]
+  de_num_channels: [1, 20, 75]
+  output_size: 100
+
+# test 
+phase: test
+device: 0
+test_batch_size: 32
+

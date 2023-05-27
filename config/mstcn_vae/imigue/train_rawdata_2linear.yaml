@@ -1,0 +1,31 @@
+work_dir: ./work_dir/recognition/iMiGUE/MSTCN_VAE_2LINEAR_RAWDATA_TEST
+
+# feeder
+feeder: feeder.feeder.Feeder
+train_feeder_args:
+  data_path: ./data/iMiGUE/imigue_afterdebug_processed/train_data.npy
+  label_path: ./data/iMiGUE/imigue_afterdebug_processed/train_label.pkl
+test_feeder_args:
+  data_path: ./data/iMiGUE/imigue_afterdebug_processed/test_data.npy
+  label_path: ./data/iMiGUE/imigue_afterdebug_processed/test_label.pkl
+
+# model
+model: net.ms_tcn_vae_2linear.MSTCN_VAE
+model_args:
+  C: 3
+  num_output: 54
+  num_person: 1
+  in_channels: 3
+  num_point: 22
+  classifeature: 256
+#optim
+weight_decay: 0.00001
+base_lr: 0.0001
+step: [200]
+
+# training
+device: [0]
+batch_size: 32
+test_batch_size: 32
+num_epoch: 300
+

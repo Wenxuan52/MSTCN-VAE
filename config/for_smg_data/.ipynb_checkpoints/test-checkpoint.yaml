@@ -1,0 +1,25 @@
+weights: ./work_dir/recognition/iMiGUE/MSTCN_VAE_RAWDATA_TEST/epoch40_model.pt
+work_dir: ./work_dir/recognition/iMiGUE/MSTCN_VAE_LINEAR_SMG_TEST/
+# feeder
+feeder: feeder.feeder.Feeder
+test_feeder_args:
+  data_path: ./data/SMG/smg_test/test_data.npy
+  label_path: ./data/SMG/smg_test/test_label.pkl
+
+# model
+model: net.ms_tcn_vae.MSTCN_VAE
+model_args:
+  C: 3
+  num_output: 96
+  en_num_channels: [75, 25, 1]
+  de_num_channels: [1, 50]
+  output_size: 90
+  num_person: 1
+  in_channels: 3
+  num_point: 25
+
+# test 
+phase: test
+device: 0
+test_batch_size: 32
+

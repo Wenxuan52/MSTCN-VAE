@@ -1,0 +1,35 @@
+work_dir: ./work_dir/recognition/iMiGUE/TCN_VAE_RAWDATA_TEST
+
+# feeder
+feeder: feeder.feeder.Feeder
+train_feeder_args:
+  data_path: ./data/iMiGUE/imigue_afterdebug_processed/train_data.npy
+  label_path: ./data/iMiGUE/imigue_afterdebug_processed/train_label.pkl
+test_feeder_args:
+  data_path: ./data/iMiGUE/imigue_afterdebug_processed/test_data.npy
+  label_path: ./data/iMiGUE/imigue_afterdebug_processed/test_label.pkl
+
+# model
+model: net.tcn_vae.TCN_VAE
+model_args:
+  en_input_size: 100
+  en_num_channels: [75, 50, 25, 1]
+  de_num_channels: [1, 50]
+  output_size: 100
+  num_person: 1
+  in_channels: 3
+  num_point: 22
+
+#optim
+weight_decay: 0.00001
+base_lr: 0.0001
+step: [100, 150]
+
+# training
+device: [0]
+batch_size: 32
+test_batch_size: 32
+num_epoch: 200
+
+
+

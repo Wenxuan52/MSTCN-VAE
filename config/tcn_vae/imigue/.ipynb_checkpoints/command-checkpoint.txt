@@ -1,0 +1,5 @@
+python main.py recognition -c config/tcn_vae/imigue/train_rawdata_linear.yaml
+
+python main.py recognition -c config/tcn_vae/imigue/train_rawdata.yaml
+
+python main.py recognition -c config/tcn_vae/imigue/test_polar.yaml

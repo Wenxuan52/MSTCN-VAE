@@ -1,0 +1,32 @@
+work_dir: ./work_dir/recognition/iMiGUE/MSTCN_VAE_LINEAR_SMG_TEST
+
+# feeder
+feeder: feeder.feeder.Feeder
+train_feeder_args:
+  data_path: ./data/SMG/smg_test/train_data.npy
+  label_path: ./data/SMG/smg_test/train_label.pkl
+test_feeder_args:
+  data_path: ./data/SMG/smg_test/test_data.npy
+  label_path: ./data/SMG/smg_test/test_label.pkl
+
+# model
+model: net.ms_tcn_vae_linear.MSTCN_VAE
+model_args:
+  C: 3
+  num_output: 96
+  de_num_channels: [1, 50]
+  output_size: 90
+  num_person: 1
+  in_channels: 3
+  num_point: 25
+
+#optim
+weight_decay: 0.00001
+base_lr: 0.0001
+step: [100, 150]
+
+# training
+device: [0]
+batch_size: 32
+test_batch_size: 32
+num_epoch: 200
