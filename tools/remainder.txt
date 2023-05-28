@@ -1,0 +1,10 @@
+imigue_gendata里 line133 中的 skeleton_list 为列表类型
+每个元素为label中每个动作的帧csv文件中对应的22个关节点三维数据，类型为nparray
+
+
+imigue_gendata里 line137 中的 data 维度为（C=3，T=max_frame, V=num_joints, M=1）
+data中取全通道全节点固定第一帧第一个人，即data[:, 0, :, 0]
+
+
+imigue_gendata里 line146 中的 fp，即写入.npy文件的数据为（N=num_sampe=13670, C=3，T=max_frame=100, V=num_joints=22, M=num_person=1）
+注意inx取值！！！！
