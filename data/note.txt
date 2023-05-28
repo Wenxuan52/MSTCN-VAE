@@ -1,0 +1,1 @@
+This directory is for .npy and .pkl filesl.
