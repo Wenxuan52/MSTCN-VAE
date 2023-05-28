@@ -1,5 +1,0 @@
-python main.py recognition -c config/lastnet/imigue/train.yaml
-
-python main.py recognition -c config/lastnet/imigue/train_rawdata.yaml
-
-python main.py recognition -c config/lastnet/imigue/test_polar.yaml
