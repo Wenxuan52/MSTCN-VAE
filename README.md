@@ -1,7 +1,5 @@
 # MSTCN-VAE: Micro-Gesture Classification
 
-This repository contains the source code for the MSTCN-VAE model, designed for micro-gesture recognition using skeleton modality. The MSTCN-VAE employs an unsupervised learning approach, offering robust performance on datasets such as iMiGUE.
-
 ---
 
 ## Table of Contents
