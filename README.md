@@ -59,3 +59,18 @@ python main.py recognition -c config/mstcn_vae/imigue/test.yaml --weights <path 
 ## Acknowledgments
 
 Thanks to the developers of MS_G3D, P&C and TCN. And thanks to MiGA Workshop & Challenge 2023 for providing the baseline code.
+
+## Citation
+
+``` bibtex
+@inproceedings{MSTCNVAE,
+  author    = {WenxuanYuan and ShanchuanHe and JianwenDou},
+  title     = {MSTCN-VAE:An unsupervised learning method for micro gesture recognition based on skeleton modality},
+  booktitle = {Proceedings of the CEUR Workshop on MiGA Workshop},
+  series    = {CEUR Workshop Proceedings},
+  volume    = {3522},
+  pages     = {Paper 5},
+  year      = {2023},
+  url       = {https://ceur-ws.org/Vol-3522/paper_5.pdf}
+}
+```
