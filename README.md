@@ -7,17 +7,13 @@ This repository contains the source code for the MSTCN-VAE model, designed for m
 ## Table of Contents
 
 1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Prerequisites](#prerequisites)
-4. [Installation](#installation)
-5. [Data Preparation](#data-preparation)
-6. [Training](#training)
-7. [Evaluation](#evaluation)
-8. [Results](#results)
-9. [Contributing](#contributing)
-10. [License](#license)
-11. [Acknowledgments](#acknowledgments)
-12. [Citation](#citation)
+2. [Prerequisites](#prerequisites)
+3. [Installation](#installation)
+4. [Data Preparation](#data-preparation)
+5. [Training](#training)
+6. [Evaluation](#evaluation)
+7. [Acknowledgments](#acknowledgments)
+8. [Citation](#citation)
 
 ---
 
