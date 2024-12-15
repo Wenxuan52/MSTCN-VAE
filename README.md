@@ -115,7 +115,7 @@ python main.py recognition -c config/mstcn_vae/imigue/test.yaml --weights <path 
 
 ## Acknowledgments
 
-We thank the developers of MS-G3D, P&C, and TCN for their contributions. We also extend our gratitude to the MiGA Workshop & Challenge 2023 for providing the baseline code that inspired this work.
+We acknowledge the works of MS-G3D, P&C, and TCN, which inspired the improvements in MSTCN-VAE. We also express our gratitude to the MiGA Workshop & Challenge 2023 for providing the baseline code that served as a reference for this work. Note that these contributions are external, and the respective authors were not directly involved in this project.
 
 ---
 
