@@ -1,7 +1,5 @@
 # MSTCN-VAE: Micro-Gesture Classification
 
----
-
 ## Table of Contents
 
 1. [Introduction](#introduction)
